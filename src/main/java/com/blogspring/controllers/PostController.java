@@ -34,4 +34,8 @@ public class PostController {
 		return mv;
 	}
 
+	@RequestMapping(value = "/newpost", method = RequestMethod.GET)
+	public String getPostForm() {
+		return "postForm";
+	}
 }
