@@ -28,9 +28,9 @@ public class PostController {
 
 	@RequestMapping(value = "/posts/{id}", method = RequestMethod.GET)
 	public ModelAndView getPostDetails(@PathVariable("id") Long id) {
-		ModelAndView mv = new ModelAndView("posts");
-		List<PostModel> posts = postService.findAll();
-		mv.addObject("posts", posts);
+		ModelAndView mv = new ModelAndView("postDetails");
+		PostModel post = postService.findById(id);
+		mv.addObject("post", post);
 		return mv;
 	}
 
