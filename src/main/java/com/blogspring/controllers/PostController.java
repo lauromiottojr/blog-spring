@@ -46,7 +46,7 @@ public class PostController {
 	}
 
 	@RequestMapping(value = "/newpost", method = RequestMethod.POST)
-	public String savePost(@Valid @RequestBody PostModel post, BindingResult result, RedirectAttributes attributes) {
+	public String saveNewPost(@Valid PostModel post, BindingResult result, RedirectAttributes attributes) {
 		if (result.hasErrors()) {
 			return "redirect:/newpost";
 		}
