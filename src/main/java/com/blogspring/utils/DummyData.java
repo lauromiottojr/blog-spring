@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,7 +16,7 @@ public class DummyData {
 	@Autowired
 	private PostRepository postRepository;
 
-	//@PostConstruct
+	// @PostConstruct
 	public void savePosts() {
 		List<PostModel> postList = new ArrayList<>();
 
