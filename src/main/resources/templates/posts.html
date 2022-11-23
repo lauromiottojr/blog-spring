@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
 
 <head>
 	<title>My Blog Spring</title>
@@ -25,13 +26,20 @@
 					<li class="breadcrumb-item active" aria-current="page">Posts</li>
 				</ol>
 			</nav>
-			<div class="card">
-				<h5 class="card-header">Destaque</h5>
+			<div class="card shadow-sm bg-white rounded" style="margin-top: 20px;" th:each="post : ${posts}">
 				<div class="card-body">
-					<h5 class="card-title">Título especial</h5>
-					<p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
-						adicional.</p>
-					<a href="#" class="btn btn-primary">Visitar</a>
+					<p class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">
+						<span th:text="${post.author}"></span>
+						<span th:text="${post.dateCriation}"></span>
+					</p>
+					<a href="#">
+						<h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;">
+							<span th:text="${post.title}"></span>
+						</h4>
+					</a>
+					<p class="card-text">
+						<span th:utext="${#strings.abbreviate(post.text, 400)}"></span>
+					</p>
 				</div>
 			</div>
 		</div>
