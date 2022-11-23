@@ -1,0 +1,23 @@
+[33mcommit 861cac349870f6dc199cf99565f2289e5db0f0c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: lauromiottojr <junior.miotto36@gmail.com>
+Date:   Wed Nov 23 10:47:53 2022 -0300
+
+    Creating Post service
+
+[33mcommit 109a815c4458721222a386d8e6257fa188ad3acb[m
+Author: lauromiottojr <junior.miotto36@gmail.com>
+Date:   Wed Nov 23 10:32:44 2022 -0300
+
+    Creating Post entity
+
+[33mcommit 9852a889d5068b6423a6c6026e6558029fa7b8e7[m
+Author: lauromiottojr <junior.miotto36@gmail.com>
+Date:   Wed Nov 23 10:23:03 2022 -0300
+
+    DB connection configuration
+
+[33mcommit c84d7c0a4f353585ad7a49b8c87725061d5fc305[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: lauromiottojr <junior.miotto36@gmail.com>
+Date:   Wed Nov 23 09:59:06 2022 -0300
+
+    Creating project

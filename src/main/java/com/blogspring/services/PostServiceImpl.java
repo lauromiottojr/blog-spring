@@ -3,10 +3,12 @@ package com.blogspring.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.blogspring.models.PostModel;
 import com.blogspring.repositories.PostRepository;
 
+@Service
 public class PostServiceImpl implements PostService {
 
 	@Autowired
